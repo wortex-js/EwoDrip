@@ -3,7 +3,7 @@
 
 ## 🧱 Setup
 ```bash
-git clone https://github.com/YOUR_USERNAME/EwoDrip.git
+git clone https://github.com/wortex213433E/EwoDrip.git
 cd EwoDrip
 npm install
 npm start
