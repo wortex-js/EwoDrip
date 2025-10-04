@@ -1,14 +1,28 @@
-<%- include("layout", { cartCount: 0 }) %>
+<%- include("layout", { cartCount: cartCount }) %>
 
-<section class="section active">
-  <h1 style="text-align:center; color:#ff4757; margin-bottom:30px;">Account Settings</h1>
+<section class="section active gothic">
+  <h1 class="text-center gothic-title">Settings ⚙️</h1>
+  <form method="POST" action="/settings/update" class="settings-form">
+    <label>Theme</label>
+    <select name="theme">
+      <option value="gothic">Gothic</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
 
-  <form method="POST" action="/settings/update">
-    <input type="text" name="username" placeholder="Username" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="password" name="password" placeholder="New Password">
-    <button type="submit">Update</button>
+    <label>Currency</label>
+    <select name="currency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="TRY">TRY</option>
+    </select>
+
+    <label>Language</label>
+    <select name="language">
+      <option value="en">English</option>
+      <option value="tr">Türkçe</option>
+    </select>
+
+    <button type="submit" class="btn gothic-btn">Save</button>
   </form>
-
-  <p style="margin-top:20px; text-align:center;">Manage your gothic identity with care 🖤</p>
 </section>
