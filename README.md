@@ -1,5 +1,5 @@
 # 🕸️ EwoDrip
-**EwoDrip** is a gothic-themed e-commerce web app built with Node.js, Express, EJS, and Stripe.
+**EwoDrip** is a gothic-themed e-commerce web app built with Node.js, Express, EJS, and Stripe by wortex213433.
 
 ## 🧱 Setup
 ```bash
