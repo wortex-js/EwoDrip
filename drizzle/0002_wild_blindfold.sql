@@ -1,0 +1,1 @@
+ALTER TABLE `orders` ADD `paymentIntentId` varchar(255);
